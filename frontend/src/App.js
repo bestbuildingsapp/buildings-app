@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 
+const apiUrl = process.env.BASE_URL;
+
 function App() {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -7,7 +9,7 @@ function App() {
 
   useEffect(() => {
     // Replace fetch with axios if needed
-    fetch("http://127.0.0.1/api/")
+    fetch(apiUrl)
       .then((response) => {
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
