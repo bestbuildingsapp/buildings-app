@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const apiUrl = process.env.BASE_URL;
+const apiUrl = process.env.REACT_APP_BASE_URL;
 
 function App() {
   const [data, setData] = useState(null);
