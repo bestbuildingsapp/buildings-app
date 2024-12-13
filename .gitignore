@@ -65,3 +65,6 @@ docker-compose.override.yml
 # Miscellaneous
 !.gitkeep
 
+#pem files
+*.pem
+
