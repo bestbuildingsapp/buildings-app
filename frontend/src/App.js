@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import CameraStream from "./components/CameraStream";
 
 const apiUrl = process.env.REACT_APP_BASE_URL;
 
@@ -33,6 +34,7 @@ function App() {
     <div>
       <h1>Response from Server:</h1>
       <pre>{JSON.stringify(data, null, 2)}</pre>
+      <CameraStream />
     </div>
   );
 }
